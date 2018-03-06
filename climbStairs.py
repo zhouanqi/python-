@@ -1,11 +1,11 @@
 def climbStairs(n):
     frequency=[1,1]
-    '''¼ÆÊý´Ó0¿ªÊ¼'''
+    '''è®¡æ•°ä»Ž0å¼€å§‹'''
     for i in range(2,n+1):
         frequency.append(frequency[i-1]+frequency[i-2])
     return frequency[n]
 
-'''²âÊÔ£º'''
+'''æµ‹è¯•ï¼š'''
 if __name__=='__main__':
     assert climbStairs(3)==3,'Calculation error'
     assert climbStairs(5)==8, 'Calculation error'
