@@ -95,14 +95,11 @@ class List_com:
             return 'list is empty'
 
 
-class Reversal_list:
-    def fanzhuan(self,value):
-        t = value.next.next
-        while value:
-            t=value.next.next
-
 
 class ListReversal:
+    """
+        反转链表
+        """
     def __init__(self,head):
         self.head=head
     def resversal(self):
@@ -120,6 +117,8 @@ class ListReversal:
             p = q
         self.head.next=tem
         return self.head
+
+# ---------------------------------------------------------------------
 a=List_com()
 b=a.create_list('a')
 a.append_list('b')
