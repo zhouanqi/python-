@@ -345,6 +345,35 @@ O(log(n) + log(m)) 时间复杂度
 
 使用二分法比较每一列的第一个数与target
 
+#### 19.python - 插入区间(insert.py)
+
+描述s
+
+给定一个按起始点排序的非重叠区间列表。在其中插入一个新的时间间隔，确保列表仍然按顺序并且不重叠（如果需要，合并时间间隔）。
+
+### 样例
+
+Insert `(2, 5)` into `[(1,2), (5,9)]`, we get [(1,9)].
+
+Insert `(3, 4)` into `[(1,2), (5,9)]`, we get `[(1,2), (3,4), (5,9)]`.
+
+* 解法
+
+判断列表的左右两边大小，
+
+```python
+if interval.start > newInterval.end:
+    ...
+elif interval.end > newInterval.start:
+    ...
+else：
+	#new.start=比较最小的两个数(inter的右边和new的左边)
+    #new.end=比较最小的两个数（inter的左边和new的右边）
+    
+```
+
+
+
 
 
 
